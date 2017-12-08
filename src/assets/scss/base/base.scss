@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: theme-color('primary');
+  color: color-yiq(theme-color('primary'));
+
+  .bg-primary & {
+    background-color: theme-color('dark');
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > main {
+    flex: 1;
+  }
+}

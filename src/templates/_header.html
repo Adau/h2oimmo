@@ -1,3 +1,46 @@
-<header>
-  Header
+<header class="header">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top text-uppercase">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+          fr
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">fr</a>
+          <a class="dropdown-item" href="#">en</a>
+        </div>
+      </li>
+    </ul>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-header">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item {{ 'active' if page_title|lower == 'Home' }}">
+          <a class="nav-link" href="/">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">L'agence</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Villas à vendre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Estimation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recrutement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <a class="navbar-brand d-none d-md-inline-block" href="/">
+      <img src="/assets/img/logo.png" alt="logo">
+    </a>
+  </nav>
 </header>

@@ -1,0 +1,47 @@
+.page-home {
+  $opacity: .5;
+
+  .header {
+    .navbar-dark.bg-dark {
+      // sass-lint:disable no-important
+      // Surcharger le !important de .bg-dark
+      background-color: rgba(theme-color('dark'), $opacity) !important;
+    }
+
+    .navbar-brand {
+      // Ne pas afficher le logo sur la page d'accueil
+      // sass-lint:disable no-important
+      // Surcharger le !important de .d-md-inline-block
+      display: none !important;
+    }
+  }
+
+  .hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('/assets/img/home/background.jpg') no-repeat center top / cover;
+    color: color('white');
+
+    &__footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      margin-bottom: 0;
+      padding: map-get($spacers, 3);
+      background-color: rgba(theme-color('dark'), $opacity);
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        top: 50%;
+        bottom: auto;
+        width: 100vh;
+        transform: translateX(-50%) rotate(-90deg);
+        transform-origin: center top;
+      }
+    }
+  }
+}

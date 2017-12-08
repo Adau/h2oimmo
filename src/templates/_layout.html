@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Starter Files</title>
+  <title>{{ agencyName }}</title>
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
-<body>
+<body class="page-{{ page_title | lower | replace(' ', '-') }}">
   {% include "_header.html" %}
   {% block content %}{% endblock %}
   {% include "_footer.html" %}
