@@ -25,6 +25,7 @@ gulp.task('templates', () => {
         address: '89 Chemin des Platelles 83210 Sollies-Toucas',
         latitude: 43.204483,
         longitude: 6.018387,
+        phone: '06.09.55.24.66'
       },
       currentYear: new Date().getFullYear()
     }))
