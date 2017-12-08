@@ -1,0 +1,31 @@
+{% extends "_layout.html" %}
+
+{% set page_title = "Recruitment" %}
+
+{% block content %}
+<main class="text-center">
+  <img class="img-fluid mb-2" src="/assets/img/agency/villa.jpg" alt="Villa">
+
+  <div class="container">
+    <p>Vous souhaitez débuter une carrière dans l'immobilier au sein d'un réseau d'exception, jeune et dynamique ?</p>
+
+    <hr class="w-25">
+
+    <p>
+      H2O Immobilier vous offre une véritable formation sur le terrain et vous accompagne dans toutes les étapes
+      d'apprentissage nécessaire au métier d'agent immobilier.
+    </p>
+
+    <p>
+      Que vous soyez débutant ou déjà expérimenté, notre agence vous offre des outils et un savoir faire
+      vous permettant de réaliser un chiffre d'affaire conséquent à court, moyen et long terme.
+    </p>
+
+    <hr class="w-25">
+
+    <p>Pour en savoir plus, contactez le directeur de l'agence au {{ agency.phone }}</p>
+  </div>
+
+  <img class="img-fluid" src="/assets/img/recruitment/handshake.jpg" alt="Poignée de mains">
+</main>
+{% endblock %}
