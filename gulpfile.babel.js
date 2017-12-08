@@ -20,8 +20,12 @@ gulp.task('server', () => {
 gulp.task('templates', () => {
   return gulp.src(['src/templates/**/*.html', '!src/templates/**/_*.html'])
     .pipe($.nunjucks.compile({
-      agencyName: 'H2O So Immobilier',
-      agencyAddress: '89 Chemin des Platelles 83210 Sollies-Toucas',
+      agency: {
+        name: 'H2O So Immobilier',
+        address: '89 Chemin des Platelles 83210 Sollies-Toucas',
+        latitude: 43.204483,
+        longitude: 6.018387,
+      },
       currentYear: new Date().getFullYear()
     }))
     .pipe(gulp.dest('dist'));

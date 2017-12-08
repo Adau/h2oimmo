@@ -1,0 +1,48 @@
+{% extends "_layout.html" %}
+
+{% set page_title = "Agency" %}
+
+{% block content %}
+<main class="text-center">
+  <img class="img-fluid mb-2" src="/assets/img/agency/villa.jpg" alt="Villa">
+
+  <div class="container">
+    <blockquote>
+      À mi-chemin entre Cannes &amp; Marseille, notre agence spécialisée dans la vente de villas avec piscine
+      et notre réseau d'agents immobiliers couvre l'ensemble de la région Provence-Alpes-Côte d'Azur.
+    </blockquote>
+  </div>
+
+  <div class="map js-map"></div>
+
+  <div class="container">
+    <blockquote>
+      La SAS H2O Immobilier est une agence ultra connectée qui utilise avec perfection les moyens modernes
+      de communication mais qui reste néanmoins une agence de proximité désireuse d'offrir un service exclusif
+      à ses clients.
+    </blockquote>
+  </div>
+
+  <img class="img-fluid mb-3" src="/assets/img/agency/devices.png" alt="Devices">
+
+  <div class="container">
+    <blockquote>
+      Le concept d'une agence spécialisée dans la transaction de villas avec piscine est née sous l'impulsion
+      d'une équipe d'agents immobiliers expérimentés et leader dans leur secteur. Contactez dès maintenant
+      le responsable le plus proche de chez vous.
+    </blockquote>
+  </div>
+
+  <img class="img-fluid" src="/assets/img/agency/swimming-pool.jpg" alt="Swimming Pool">
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  window.agency = {
+    latitude: {{ agency.latitude }},
+    longitude: {{ agency.longitude }}
+  };
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+{% endblock %}
