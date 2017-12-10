@@ -787,8 +787,8 @@ $navbar-dark-active-color:          $blue;
 // Carousel
 
 // $carousel-control-color:            $white !default;
-// $carousel-control-width:            15% !default;
-// $carousel-control-opacity:          .5 !default;
+$carousel-control-width:            auto;
+$carousel-control-opacity:          1;
 
 // $carousel-indicator-width:          30px !default;
 // $carousel-indicator-height:         3px !default;

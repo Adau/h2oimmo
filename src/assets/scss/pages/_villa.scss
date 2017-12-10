@@ -1,0 +1,14 @@
+.page-villa {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    bottom: auto;
+    padding: map-get($spacers, 5) map-get($spacers, 3);
+    transform: translateY(-50%);
+    background-color: rgba($black, .7);
+  }
+
+  .carousel-item--new {
+    @include ribbon(attr(data-ribbon-text));
+  }
+}

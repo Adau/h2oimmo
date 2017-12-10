@@ -23,25 +23,7 @@
     }
 
     &--new .villa__link:first-of-type {
-      position: relative;
-      overflow: hidden;
-
-      &::after {
-        $ribbon-width: 200px;
-
-        position: absolute;
-        top: 0;
-        right: -($ribbon-width / 2);
-        width: $ribbon-width;
-        padding: map-get($spacers, 1) 0;
-        transform: rotate(45deg) translate3d(0, ($ribbon-width / 4), 0);
-        transform-origin: center top;
-        background-color: theme-color('danger');
-        color: color('white');
-        text-align:  center;
-        text-transform: uppercase;
-        content: attr(data-ribbon-text);
-      }
+      @include ribbon(attr(data-ribbon-text));
     }
   }
 }

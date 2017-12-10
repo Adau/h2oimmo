@@ -110,7 +110,7 @@
             </p>
             <div class="villa__pictures">
               {% for picture in villa.pictures %}
-                <a class="villa__link" href="#" {{ 'data-ribbon-text=Exclusivité' if villa.isNew }}>
+                <a class="villa__link" href="/villa.html" {{ 'data-ribbon-text=Exclusivité' if villa.isNew }}>
                   <img class="villa__picture" src="{{ picture }}" alt="Photo">
                 </a>
               {% endfor %}

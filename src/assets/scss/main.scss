@@ -1,5 +1,6 @@
 @import
-'abstracts/variables';
+'abstracts/variables',
+'abstracts/mixins';
 
 @import
 'bootstrap',
@@ -19,7 +20,8 @@
 @import
 'pages/index',
 'pages/agency',
-'pages/villas';
+'pages/villas',
+'pages/villa';
 
 // @import
 // 'themes/';
