@@ -1,0 +1,47 @@
+.page-villas {
+  .villa {
+    margin-bottom: map-get($spacers, 4);
+
+    &__title,
+    &__description {
+      margin-bottom: 0;
+    }
+
+    &__pictures {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-gap: map-get($spacers, 1);
+
+      > :first-child {
+        grid-column: span 2;
+      }
+    }
+
+    &__picture {
+      @include img-fluid();
+    }
+
+    &--new .villa__link:first-of-type {
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        $ribbon-width: 200px;
+
+        position: absolute;
+        top: 0;
+        right: -($ribbon-width / 2);
+        width: $ribbon-width;
+        padding: map-get($spacers, 1) 0;
+        transform: rotate(45deg) translate3d(0, ($ribbon-width / 4), 0);
+        transform-origin: center top;
+        background-color: theme-color('danger');
+        color: color('white');
+        text-align:  center;
+        text-transform: uppercase;
+        content: attr(data-ribbon-text);
+      }
+    }
+  }
+}

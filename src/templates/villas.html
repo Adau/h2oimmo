@@ -1,0 +1,124 @@
+{% extends "_layout.html" %}
+
+{% set page_title = "Villas" %}
+
+{% block content %}
+<main>
+  <img class="img-fluid mb-2" src="/assets/img/agency/villa.jpg" alt="Villa">
+
+  <div class="container">
+    <form class="mb-3" method="post">
+      <div class="form-row justify-content-center align-items-center">
+        <div class="col-12 col-md-auto">
+          <label class="col-form-label">Vous souhaitez acheter</label>
+        </div>
+        <div class="col-12 col-md-2">
+          <select class="form-control custom-select" name="" required>
+            <option value="">Une villa avec piscine</option>
+            <option value="">Une villa</option>
+            <option value="">Un terrain</option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-auto">
+          <label class="col-form-label">à</label>
+        </div>
+        <div class="col-12 col-md-2">
+          <input type="text" class="form-control" name="" placeholder="Sollies-Toucas" required="">
+        </div>
+
+        <div class="col-12 col-md-auto">
+          <label class="col-form-label">de</label>
+        </div>
+        <div class="col-12 col-md-1">
+          <input type="text" class="form-control" name="" placeholder="100 m²" required>
+        </div>
+
+        <div class="col-12 col-md-auto">
+          <label class="col-form-label">pour un budget de</label>
+        </div>
+        <div class="col-12 col-md-2 mb-3 mb-md-0">
+          <input type="text" class="form-control" name="" placeholder="1 000 000 €" required>
+        </div>
+
+        <div class="col-12 col-md-auto">
+          <button type="submit" class="btn btn-primary" title="Rechercher">
+            <i class="fa fa-search"></i>
+            <span class="d-inline-block d-md-none">Rechercher</span>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <h4 class="text-separate mb-3">Les nouvelles annonces</h4>
+
+    {%
+      set villas = [{
+        title: 'Spacieuse villa avec piscine dominant la vallée',
+        size: 220,
+        location: 'Sollies-Toucas',
+        price: 700000,
+        pictures: [
+          '/assets/img/villas/1.jpg',
+          '/assets/img/villas/2.jpg',
+          '/assets/img/villas/3.jpg'
+        ],
+        isNew: true
+      }, {
+        title: 'Villa ultra moderne de haut standing avec piscine et jaccuzi',
+        size: 360,
+        location: 'Cannes',
+        price: 1200000,
+        pictures: [
+          '/assets/img/villas/1.jpg',
+          '/assets/img/villas/2.jpg',
+          '/assets/img/villas/3.jpg'
+        ],
+        isNew: true
+      }, {
+        title: 'Villa ultra moderne de haut standing avec piscine et jaccuzi',
+        size: 360,
+        location: 'Cannes',
+        price: 1200000,
+        pictures: [
+          '/assets/img/villas/1.jpg',
+          '/assets/img/villas/2.jpg',
+          '/assets/img/villas/3.jpg'
+        ],
+        isNew: false
+      }, {
+        title: 'Spacieuse villa avec piscine dominant la vallée',
+        size: 220,
+        location: 'Sollies-Toucas',
+        price: 700000,
+        pictures: [
+          '/assets/img/villas/1.jpg',
+          '/assets/img/villas/2.jpg',
+          '/assets/img/villas/3.jpg'
+        ],
+        isNew: false
+      }]
+    %}
+
+    <div class="row">
+      {% for villa in villas %}
+        <div class="col-md-6">
+          <div class="villa {{ 'villa--new' if villa.isNew }}">
+            <h5 class="villa__title">{{ villa.title }}</h5>
+            <p class="villa__description">
+              Villa de {{ villa.size }} m² située à {{ villa.location }} - {{ villa.price }} €
+            </p>
+            <div class="villa__pictures">
+              {% for picture in villa.pictures %}
+                <a class="villa__link" href="#" {{ 'data-ribbon-text=Exclusivité' if villa.isNew }}>
+                  <img class="villa__picture" src="{{ picture }}" alt="Photo">
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</main>
+{% endblock %}
