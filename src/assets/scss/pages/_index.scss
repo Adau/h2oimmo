@@ -39,6 +39,8 @@
         top: 50%;
         bottom: auto;
         width: 100vh;
+        padding-right: map-get($spacers, 5);
+        padding-left: map-get($spacers, 5);
         transform: translateX(-50%) rotate(-90deg);
         transform-origin: center top;
       }
