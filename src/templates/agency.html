@@ -44,5 +44,5 @@
     longitude: {{ agency.longitude }}
   };
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ googleMapsApiKey }}&callback=initMap"></script>
 {% endblock %}

@@ -27,7 +27,8 @@ gulp.task('templates', () => {
         longitude: 6.018387,
         phone: '06.09.55.24.66'
       },
-      currentYear: new Date().getFullYear()
+      currentYear: new Date().getFullYear(),
+      googleMapsApiKey: ''
     }))
     .pipe(gulp.dest('dist'));
 });

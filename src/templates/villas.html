@@ -13,7 +13,7 @@
           <label class="col-form-label">Vous souhaitez acheter</label>
         </div>
         <div class="col-12 col-md-2">
-          <select class="form-control custom-select" name="" required>
+          <select class="form-control custom-select" name="type" required>
             <option value="">Une villa avec piscine</option>
             <option value="">Une villa</option>
             <option value="">Un terrain</option>
@@ -24,21 +24,21 @@
           <label class="col-form-label">à</label>
         </div>
         <div class="col-12 col-md-2">
-          <input type="text" class="form-control" name="" placeholder="Sollies-Toucas" required="">
+          <input type="text" class="form-control js-autocomplete" name="location" placeholder="Sollies-Toucas" required>
         </div>
 
         <div class="col-12 col-md-auto">
           <label class="col-form-label">de</label>
         </div>
         <div class="col-12 col-md-1">
-          <input type="text" class="form-control" name="" placeholder="100 m²" required>
+          <input type="text" class="form-control" name="size" placeholder="100 m²" required>
         </div>
 
         <div class="col-12 col-md-auto">
           <label class="col-form-label">pour un budget de</label>
         </div>
         <div class="col-12 col-md-2 mb-3 mb-md-0">
-          <input type="text" class="form-control" name="" placeholder="1 000 000 €" required>
+          <input type="text" class="form-control" name="budget" placeholder="1 000 000 €" required>
         </div>
 
         <div class="col-12 col-md-auto">
@@ -121,4 +121,8 @@
     </div>
   </div>
 </main>
+{% endblock %}
+
+{% block scripts %}
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ googleMapsApiKey }}&libraries=places&callback=initAutocomplete"></script>
 {% endblock %}

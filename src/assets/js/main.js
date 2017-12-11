@@ -8,3 +8,6 @@ import 'bootstrap';
 
 import initMap from './map';
 window.initMap = initMap;
+
+import initAutocomplete from './autocomplete';
+window.initAutocomplete = initAutocomplete;
