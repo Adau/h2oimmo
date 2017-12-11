@@ -52,54 +52,6 @@
 
     <h4 class="text-separate mb-3">Les nouvelles annonces</h4>
 
-    {%
-      set villas = [{
-        title: 'Spacieuse villa avec piscine dominant la vallée',
-        size: 220,
-        location: 'Sollies-Toucas',
-        price: 700000,
-        pictures: [
-          '/assets/img/villas/1.jpg',
-          '/assets/img/villas/2.jpg',
-          '/assets/img/villas/3.jpg'
-        ],
-        isNew: true
-      }, {
-        title: 'Villa ultra moderne de haut standing avec piscine et jaccuzi',
-        size: 360,
-        location: 'Cannes',
-        price: 1200000,
-        pictures: [
-          '/assets/img/villas/1.jpg',
-          '/assets/img/villas/2.jpg',
-          '/assets/img/villas/3.jpg'
-        ],
-        isNew: true
-      }, {
-        title: 'Villa ultra moderne de haut standing avec piscine et jaccuzi',
-        size: 360,
-        location: 'Cannes',
-        price: 1200000,
-        pictures: [
-          '/assets/img/villas/1.jpg',
-          '/assets/img/villas/2.jpg',
-          '/assets/img/villas/3.jpg'
-        ],
-        isNew: false
-      }, {
-        title: 'Spacieuse villa avec piscine dominant la vallée',
-        size: 220,
-        location: 'Sollies-Toucas',
-        price: 700000,
-        pictures: [
-          '/assets/img/villas/1.jpg',
-          '/assets/img/villas/2.jpg',
-          '/assets/img/villas/3.jpg'
-        ],
-        isNew: false
-      }]
-    %}
-
     <div class="row">
       {% for villa in villas %}
         <div class="col-md-6">

@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import plugins from 'gulp-load-plugins';
+import data from './src/data/data.js';
 
 // Chargement des plugins de package.json
 const $ = plugins({
@@ -19,17 +20,7 @@ gulp.task('server', () => {
 // Génération du template HTML
 gulp.task('templates', () => {
   return gulp.src(['src/templates/**/*.html', '!src/templates/**/_*.html'])
-    .pipe($.nunjucks.compile({
-      agency: {
-        name: 'H2O So Immobilier',
-        address: '89 Chemin des Platelles 83210 Sollies-Toucas',
-        latitude: 43.204483,
-        longitude: 6.018387,
-        phone: '06.09.55.24.66'
-      },
-      currentYear: new Date().getFullYear(),
-      googleMapsApiKey: ''
-    }))
+    .pipe($.nunjucks.compile(data))
     .pipe(gulp.dest('dist'));
 });
 
