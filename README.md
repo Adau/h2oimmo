@@ -12,10 +12,9 @@
     yarn run start
     ```
 
-  Générer les fichiers de distribution pour la production :
+    Générer les fichiers de distribution pour la production :
 
-      ```sh
+    ```sh
     yarn run build
-      ```
-
+    ```
 
