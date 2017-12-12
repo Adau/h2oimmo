@@ -1,17 +1,21 @@
+# H2O So Immobilier
+
 1. Installer les dépendances :
 
     ```sh
     yarn install
     ```
 
-2. Générer les fichiers de distribution et lancer le projet :
+2. Générer les fichiers de distribution pour le développement et lancer le projet :
 
     ```sh
     yarn run start
     ```
 
-3. Générer les fichiers de distribution pour la production :
+  Générer les fichiers de distribution pour la production :
 
-    ```sh
+      ```sh
     yarn run build
-    ```
+      ```
+
+
