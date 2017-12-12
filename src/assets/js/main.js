@@ -11,3 +11,6 @@ window.initMap = initMap;
 
 import initAutocomplete from './autocomplete';
 window.initAutocomplete = initAutocomplete;
+
+import onValidateRecaptcha from './recaptcha';
+window.onValidateRecaptcha = onValidateRecaptcha;

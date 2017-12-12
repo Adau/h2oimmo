@@ -8,6 +8,7 @@ export default {
   },
   "currentYear": new Date().getFullYear(),
   "googleMapsApiKey": "",
+  "googleRecaptchaSiteKey": "",
   "villas": [{
     "title": "Spacieuse villa avec piscine dominant la vallée",
     "size": 220,
