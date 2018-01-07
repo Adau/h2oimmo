@@ -44,4 +44,11 @@
       }
     }
   }
+
+  @include media-breakpoint-up(md) {
+    .footer {
+      color: color('white');
+      z-index: 1; // par-dessus .hero
+    }
+  }
 }
