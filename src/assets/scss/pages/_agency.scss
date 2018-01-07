@@ -3,4 +3,10 @@
     height: 300px;
     margin-bottom: map-get($spacers, 3);
   }
+
+  @include media-breakpoint-up(md) {
+    blockquote {
+      font-weight: $font-weight-bold;
+    }
+  }
 }
