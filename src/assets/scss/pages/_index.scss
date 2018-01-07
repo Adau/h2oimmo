@@ -1,18 +1,16 @@
 .page-home {
-  $opacity: .5;
+  $opacity: .3;
 
   .header {
     .navbar-dark.bg-dark {
-      // sass-lint:disable no-important
       // Surcharger le !important de .bg-dark
-      background-color: rgba(theme-color('dark'), $opacity) !important;
+      background-color: rgba(theme-color('dark'), $opacity) !important; // sass-lint:disable-line no-important
     }
 
     .navbar-brand {
       // Ne pas afficher le logo sur la page d'accueil
-      // sass-lint:disable no-important
       // Surcharger le !important de .d-md-inline-block
-      display: none !important;
+      display: none !important; // sass-lint:disable-line no-important
     }
   }
 
