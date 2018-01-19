@@ -1,7 +1,0 @@
-.header {
-  @include media-breakpoint-up(md) {
-    .dropdown {
-      border-right: 1px solid $navbar-dark-color;
-    }
-  }
-}
