@@ -4,7 +4,7 @@
     margin-bottom: map-get($spacers, 3);
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(xl) {
     blockquote {
       font-weight: $font-weight-bold;
     }
