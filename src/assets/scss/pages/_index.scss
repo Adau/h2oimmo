@@ -2,6 +2,11 @@
   $opacity: .3;
 
   .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
     .navbar-dark.bg-dark {
       // Surcharger le !important de .bg-dark
       background-color: rgba(theme-color('dark'), $opacity) !important; // sass-lint:disable-line no-important
@@ -15,11 +20,9 @@
   }
 
   .hero {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: map-get($spacers, 3);
     background: url('/assets/img/home/background.jpg') no-repeat right top / cover;
     color: color('white');
 
@@ -42,13 +45,6 @@
         transform: translateX(-50%) rotate(-90deg);
         transform-origin: center top;
       }
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    .footer {
-      color: color('white');
-      z-index: 1; // par-dessus .hero
     }
   }
 }
