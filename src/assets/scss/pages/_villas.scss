@@ -4,6 +4,7 @@
 
     &__title,
     &__description {
+      @include text-truncate();
       margin-bottom: 0;
     }
 
