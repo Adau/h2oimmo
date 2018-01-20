@@ -10,10 +10,10 @@
     <form class="mb-3" method="post">
       <div class="form-row justify-content-center align-items-center">
         <div class="col-12 col-md-auto">
-          <label class="col-form-label mb-md-2 mb-xl-0">Vous souhaitez acheter</label>
+          <label class="col-form-label mb-md-2">Vous souhaitez acheter</label>
         </div>
-        <div class="col-12 col-md-4 col-xl-2">
-          <select class="form-control custom-select mb-md-2 mb-xl-0" name="type" required>
+        <div class="col-12 col-md-auto">
+          <select class="form-control custom-select mb-md-2" name="type" required>
             <option value="">&nbsp;</option>
             <option value="swimming-pool">Une villa avec piscine</option>
             <option value="villa">Une villa</option>
@@ -22,34 +22,36 @@
         </div>
 
         <div class="col-12 col-md-auto">
-          <label class="col-form-label mb-md-2 mb-xl-0">à</label>
+          <label class="col-form-label mb-md-2">à</label>
         </div>
-        <div class="col-12 col-md-4 col-xl-2">
-          <input type="text" class="form-control js-autocomplete mb-md-2 mb-xl-0" name="location"
+        <div class="col-12 col-md-auto">
+          <input type="text" class="form-control js-autocomplete mb-md-2" name="location"
             placeholder="Sollies-Toucas" required
           >
         </div>
 
         <div class="col-12 col-md-auto">
-          <label class="col-form-label mb-md-2 mb-xl-0">de</label>
+          <label class="col-form-label mb-md-2">de</label>
         </div>
-        <div class="col-12 col-md-3 col-xl-1">
-          <input type="text" class="form-control mb-md-2 mb-xl-0" name="size" placeholder="100 m²" required>
+        <div class="col-12 col-md-auto">
+          <input type="text" class="form-control mb-md-2" name="size" placeholder="100 m²" required>
+        </div>
+        <div class="col-12 col-md-auto">
+          <label class="col-form-label mb-md-2">minimum</label>
         </div>
 
         <div class="col-12 col-md-auto">
-          <label class="col-form-label mb-md-2 mb-xl-0">pour un budget de</label>
+          <label class="col-form-label mb-md-2">pour un budget maximum de</label>
         </div>
-        <div class="col-12 col-md-3 col-xl-2">
-          <input type="text" class="form-control mb-md-2 mb-xl-0" name="budget" placeholder="1 000 000 €"
+        <div class="col-12 col-md-auto">
+          <input type="text" class="form-control mb-2" name="budget" placeholder="1 000 000 €"
             required
           >
         </div>
 
         <div class="col-12 col-md-auto">
-          <button type="submit" class="btn btn-primary mb-md-2 mb-xl-0" title="Rechercher">
-            <i class="fa fa-search"></i>
-            <span class="d-inline-block d-xl-none">Rechercher</span>
+          <button type="submit" class="btn btn-primary mb-md-2" title="Rechercher">
+            <i class="fa fa-search"></i> Rechercher
           </button>
         </div>
       </div>
