@@ -1,4 +1,5 @@
 @mixin ribbon($ribbon-text, $ribbon-width: 200px) {
+  display: block;
   position: relative;
   overflow: hidden;
 
