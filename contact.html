@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H2O So Immobilier</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body class="page-contact">
+  <header class="header">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top text-uppercase">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+          fr
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">fr</a>
+          <a class="dropdown-item" href="#">en</a>
+        </div>
+      </li>
+    </ul>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-header">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/">Accueil</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/agency.html">L'agence</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/villas.html">Villas à vendre</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/quotation.html">Estimation</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/recruitment.html">Recrutement</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <a class="navbar-brand d-none d-md-inline-block" href="/">
+      <img src="/assets/img/logo.png" width="44" alt="logo">
+    </a>
+  </nav>
+</header>
+
+  
+<main>
+  <img class="img-fluid mb-2" src="/assets/img/agency/villa.jpg" alt="Villa">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <!-- <div class="alert alert-success" role="alert">
+          Votre message a bien été envoyé !
+        </div> -->
+
+        <form method="post">
+          <fieldset>
+            <legend class="mb-3">Formulaire de contact</legend>
+
+            <div class="form-group form-row">
+              <div class="col">
+                <label>Nom</label>
+                <input type="text" class="form-control" name="lastName" placeholder="Nom" required>
+              </div>
+              <div class="col">
+                <label>Prénom</label>
+                <input type="text" class="form-control" name="firstName" placeholder="Prénom" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+              <label>Téléphone</label>
+              <input type="tel" class="form-control" name="phone" placeholder="Téléphone">
+            </div>
+
+            <div class="form-group">
+              <label>Sujet</label>
+              <select class="custom-select form-control" name="subject" required>
+                <option value="">&nbsp;</option>
+                <option value="quotation" selected>Estimation</option>
+                <option value="sale">Mise en vente</option>
+                <option value="acquisition">Acquisition</option>
+                <option value="information">Renseignement</option>
+                <option value="recruitment">Recrutement</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <div
+                class="g-recaptcha"
+                data-sitekey=""
+                data-callback="onValidateRecaptcha"
+              >
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary js-btn-submit" disabled>Envoyer</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer class="footer">
+  &copy; H2O So Immobilier 2018
+</footer>
+
+
+  
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <script src="assets/js/main.min.js"></script>
+</body>
+</html>
