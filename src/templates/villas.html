@@ -4,7 +4,7 @@
 
 {% block content %}
 <main>
-  <img class="img-fluid mb-2" src="/assets/img/agency/villa.jpg" alt="Villa">
+  <img class="img-fluid mb-2" src="{{ site.baseurl }}/assets/img/agency/villa.jpg" alt="Villa">
 
   <div class="container">
     <form class="mb-3" method="post">
@@ -71,8 +71,8 @@
             <div class="villa__pictures">
               {% for picture in villa.pictures %}
                 <div>
-                  <a class="villa__link" href="/villa.html" {{ 'data-ribbon-text=Exclusivité' if villa.isNew }}>
-                    <img class="villa__picture" src="{{ picture }}" alt="Photo">
+                  <a class="villa__link" href="{{ site.baseurl }}/villa.html" {{ 'data-ribbon-text=Exclusivité' if villa.isNew }}>
+                    <img class="villa__picture" src="{{ site.baseurl }}{{ picture }}" alt="Photo">
                   </a>
                 </div>
               {% endfor %}

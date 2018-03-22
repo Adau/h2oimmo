@@ -1,4 +1,10 @@
+import yargs from 'yargs';
+const PRODUCTION = !!(yargs.argv.production);
+
 export default {
+  "site": {
+    "baseurl": PRODUCTION ? '/h2oimmo' : ''
+  },
   "agency": {
     "name": "H2O So Immobilier",
     "address": "89 Chemin des Platelles 83210 Sollies-Toucas",

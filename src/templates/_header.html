@@ -19,28 +19,28 @@
     <div class="collapse navbar-collapse" id="navbar-header">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item {{ 'active' if page_title|lower == 'home' }}">
-          <a class="nav-link" href="/">Accueil</a>
+          <a class="nav-link" href="{{ site.baseurl }}/">Accueil</a>
         </li>
         <li class="nav-item {{ 'active' if page_title|lower == 'agency' }}">
-          <a class="nav-link" href="/agency.html">L'agence</a>
+          <a class="nav-link" href="{{ site.baseurl }}/agency.html">L'agence</a>
         </li>
         <li class="nav-item {{ 'active' if page_title|lower == 'villas'or page_title|lower == 'villa' }}">
-          <a class="nav-link" href="/villas.html">Villas à vendre</a>
+          <a class="nav-link" href="{{ site.baseurl }}/villas.html">Villas à vendre</a>
         </li>
         <li class="nav-item {{ 'active' if page_title|lower == 'quotation' }}">
-          <a class="nav-link" href="/quotation.html">Estimation</a>
+          <a class="nav-link" href="{{ site.baseurl }}/quotation.html">Estimation</a>
         </li>
         <li class="nav-item {{ 'active' if page_title|lower == 'recruitment' }}">
-          <a class="nav-link" href="/recruitment.html">Recrutement</a>
+          <a class="nav-link" href="{{ site.baseurl }}/recruitment.html">Recrutement</a>
         </li>
         <li class="nav-item {{ 'active' if page_title|lower == 'contact' }}">
-          <a class="nav-link" href="/contact.html">Contact</a>
+          <a class="nav-link" href="{{ site.baseurl }}/contact.html">Contact</a>
         </li>
       </ul>
     </div>
 
-    <a class="navbar-brand d-none d-md-inline-block" href="/">
-      <img src="/assets/img/logo.png" width="44" alt="logo">
+    <a class="navbar-brand d-none d-md-inline-block" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/img/logo.png" width="44" alt="logo">
     </a>
   </nav>
 </header>

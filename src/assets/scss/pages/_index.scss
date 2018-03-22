@@ -24,7 +24,7 @@
     position: relative;
     min-height: 100vh;
     margin-bottom: map-get($spacers, 3);
-    background: url('/assets/img/home/background.jpg') no-repeat right top / cover;
+    background: url('../img/home/background.jpg') no-repeat right top / cover;
     color: color('white');
 
     &__footer {

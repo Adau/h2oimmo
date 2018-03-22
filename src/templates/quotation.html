@@ -4,7 +4,7 @@
 
 {% block content %}
 <main class="text-center">
-  <img class="img-fluid mb-2" src="/assets/img/agency/villa.jpg" alt="Villa">
+  <img class="img-fluid mb-2" src="{{ site.baseurl }}/assets/img/agency/villa.jpg" alt="Villa">
 
   <div class="container">
     <p>Vous souhaitez connaître la valeur de votre propriété pour un projet de vente immédiat ou futur ?</p>
@@ -28,11 +28,11 @@
     <hr class="w-25">
 
     <p>
-      Contactez-nous au {{ agency.phone }} ou utilisez notre <a href="/contact.html">formulaire de contact</a> pour obtenir
+      Contactez-nous au {{ agency.phone }} ou utilisez notre <a href="{{ site.baseurl }}/contact.html">formulaire de contact</a> pour obtenir
       un rendez-vous avec le conseiller le plus proche de chez vous.
     </p>
   </div>
 
-  <img class="img-fluid" src="/assets/img/quotation/contract.jpg" alt="Contract">
+  <img class="img-fluid" src="{{ site.baseurl }}/assets/img/quotation/contract.jpg" alt="Contract">
 </main>
 {% endblock %}
